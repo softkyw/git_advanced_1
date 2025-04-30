@@ -1,7 +1,12 @@
 from typing import List
 # Skeleton code for even_list
 def even_list(int_list: List[int]) -> List[int]:
- """
+ even = []
+    for x in int_list:
+        if x % 2 == 0:
+            even.append(x)
+    return even
+"""
  Determines if a number is even and return an even list.
  Args:
  int_list: A list of integer.
